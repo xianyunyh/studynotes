@@ -1,0 +1,12 @@
+{
+    "name": "tianlei/nodejs",
+    "authors": [
+        {
+            "name": "xianyun",
+            "email": "tianlei@qq.com"
+        }
+    ],
+    "require": {
+    	 "hprose/hprose": "^2.0"
+    }
+}
