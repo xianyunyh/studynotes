@@ -21,6 +21,15 @@ php artisan make:mail UserRegister
 #### 3.1 配置发送者
 
 ```php
+//配置主题
+public $subject = "这是一个测试邮件";
+
+//配置from
+public $from = [
+    [ "name"=>"闲云野鹤",
+     "address"=>"guohaijiang2000@126.com"]
+];
+
 public function build()
 {
     return $this->from('example@example.com')
