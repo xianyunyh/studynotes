@@ -1,0 +1,2 @@
+[2018-08-19 16:40:46 @5488.0]	WARNING	swSocket_bind (ERROR 502): bind(0.0.0.0:9501) failed. Error: Address already in use [98]
+5488退出了
