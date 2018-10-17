@@ -17,7 +17,7 @@ sudo groupadd docker
 sudo gpasswd -a ${USER} docker
 
 sudo su
-echo '{"registry-mirrors": ["https://docker.mirrors.ustc.edu.cn/"]}' > /etc/default/docker
+echo '{"registry-mirrors": ["https://docker.mirrors.ustc.edu.cn/"]}' > /etc/docker/daemon.json
 sudo service docker restart
 newgrp - docker
 exit
