@@ -175,3 +175,10 @@ $task = app(TaskModel::class);
   @users 用于表述当前元素和任何其他结构元素之间的关系
 
   @uses类似于@see @uses标记与@see的不同之处在于@see是单向链接，这意味着包含@see标记的文档包含指向其他结构元素或URI的链接，但不暗示链接。
+  
+ ## 参考文章
+ - [如何使用PHPDoc写注解](https://oomusou.io/phpstorm/phpstorm-phpdoc/)
+文章
+- [phpdoc官网文档](https://docs.phpdoc.org/index.html)
+- [中文介绍](https://www.mokeyjay.com/archives/1211)
+
