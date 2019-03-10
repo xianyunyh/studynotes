@@ -406,7 +406,12 @@ security:
 一堆安全性的变化！它已被重命名，OAuth2流名已更新，您可以有多个流，并且支持OpenID Connect。“基本”类型已被重命名为“http”，现在安全可以有一个“方案”和“bearerFormat”。
 
  
+## 文章来源
+- [https://www.breakyizhan.com/swagger/2806.html](https://www.breakyizhan.com/swagger/2806.html)
 
+## 推荐阅读
+
+- [http://openapi-map.apihandyman.io/](http://openapi-map.apihandyman.io/)
  
 
  
