@@ -136,6 +136,10 @@ composer是PHP程序的依赖管理工具。
   1. https://packagist.phpcomposer.com
 
   2. https://packagist.laravel-china.org
+  
+  3. https://mirrors.huaweicloud.com/repository/php/
+  
+  4. https://mirrors.aliyun.com/composer/
 
 使用 Composer 镜像加速有两种选项：
 
