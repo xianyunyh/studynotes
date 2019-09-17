@@ -225,3 +225,19 @@ subst 函数用来文本替换，格式如下。
 ```
  $(subst ee,EE,feet on the street)
 ```
+
+.DEFAULT 默认的前导条件
+
+以redis的makefile为例。`all` 不存在。所以会走到`DEFAULT`中。
+
+```
+default: all
+
+.DEFAULT:
+	cd src && $(MAKE) $@
+
+install:
+	cd src && $(MAKE) $@
+
+.PHONY: install
+```
