@@ -189,4 +189,6 @@ steps:
   commands:
   - composer install
 ```
-
+## 注意事项
+- https://discourse.drone.io/t/cannot-clone-private-gitea-repo-could-not-read-username-for-0-8-0-rc-3-gitea-1-2-0-rc2/624/2
+当更改了仓库的权限后，drone 不会自动更新，需要手动sync
