@@ -104,3 +104,13 @@ func slicecopy(toPtr unsafe.Pointer, toLen int, fromPtr unsafe.Pointer, fromLen 
 ```
 
 将对应大小的元素复制到对应的内存空间
+
+### 切片注意事项
+因为切片是共享底层数组，所以如果不清楚容量， 会导致意外BUG
+```go
+arr := []int{1,2,3,4}
+arr1 :=[:2]
+arr1 = append(arr1,4)
+fmt.Println(arr)//1,2,4,4 
+```
+arr1会更改arr的arr[3]的值
