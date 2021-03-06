@@ -13,6 +13,24 @@ redis提供五种数据类型：string，hash，list，set及zset(sorted set)
 
 ### string（字符串）
 
+
+
+```go
+type sds struct {
+    flags byte//标记
+    len uint64//长度
+    alloc uint64//容量
+    buf []byte //数据
+}
+
+```
+`sdshdr5`：lags 低3位是类型，高5位长度
+`sdshdr8` 、`sdshdr16` 、`sdshdr32` 、`sdshdr64` 这几个类型的`flags` 的后三个字节表示buf存储的类型。高5位未使用
+
+![sds](./SDS.png)
+
+
+
 > string是最简单的类型，你可以理解成与Memcached一模一样的类型，一个key对应一个value，其上支持的操作与Memcached的操作类似。但它的功能更丰富。
 
 - set 
