@@ -1,6 +1,8 @@
 ## MySQL 几种 join
 
-我们在使用MySQL的时候，经常需要进行`join` 表的操作，主要的`join` 有  左连接**、**右连接**、**全连接**、**交叉连接**
+我们在使用MySQL的时候，经常需要进行`join` 表的操作，主要的`join` 有  **左连接**、**右连接**、**全连接**、**交叉连接**
+一个表连接自己叫自连接
+
 
 假设有两个表学生表和班级班
 
@@ -52,5 +54,14 @@ select * from student right join class on student.classid = class.classid
 select * from student full join class on class.classid = student.classid
 ```
 
+### 4. 自连接
 
+```sql
+select * from student as a  left join student as b on a.uid = b.uid
+```
+| uid  | uname | classid | uid1  | uname1 | classid1 |
+| ---- | ----- | ------- | ---- | ----- | ------- |
+| 1    | 张三  | 1       | 1    | 张三  | 1       |
+| 2    | 李四  | 2       | 2    | 李四  | 2       |
+| 3    | 王二  | 3       | 3    | 王二  | 3       |
 
