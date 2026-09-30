@@ -31,7 +31,7 @@
 
 - linkActiveClass
 
-全局配置 <router-link> 的默认『激活 class 类名
+全局配置 `<router-link>` 的默认“激活 class”类名。
 
 
 - scrollBehavior 
@@ -74,4 +74,6 @@
 
 路由的查询的query 生成/user?id=100
 
- <router-link :to='{path:"login",query:{id:100}}'>query</router-link>
+```html
+<router-link :to='{path:"login",query:{id:100}}'>query</router-link>
+```

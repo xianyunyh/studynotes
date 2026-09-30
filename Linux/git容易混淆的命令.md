@@ -10,7 +10,7 @@ git branch --set-upstream-to origin/devtest devtest
 
 > git push 使用本地的对应分支来更新对应的远程分支
 
-$ git push <远程主机名> <本地分支名>:<远程分支名>
+`$ git push <远程主机名> <本地分支名>:<远程分支名>`
 
 ```
 git push origin dev:dev  //这样远程仓库也有一个dev分支了
@@ -48,7 +48,7 @@ git clone -b <分支名>  <仓库地址>
 
 ##  pull 获取并合并其他的厂库
 
-git pull <远程主机> <远程分支>:<本地分支>
+`git pull <远程主机> <远程分支>:<本地分支>`
 
 ```
     git pull origin master:my_test
@@ -89,7 +89,7 @@ reset 回退 会把把head 指向对应的commit
 - --mixed – 默认选项。缓存区和你指定的提交同步，但工作目录不受影响
 - --hard – 缓存区和工作目录都同步到你指定的提交
 
-将当前分支的末端移到 <commit>，将缓存区和工作目录都重设到这个提交。它不仅清除了未提交的更改，同时还清除了 <commit> 之后的所有提交
+将当前分支的末端移到 `<commit>`，将缓存区和工作目录都重设到这个提交。它不仅清除了未提交的更改，同时还清除了 `<commit>` 之后的所有提交。
 
 ```
 git reset --hard

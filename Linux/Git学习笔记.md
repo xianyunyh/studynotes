@@ -104,7 +104,7 @@ HEAD指针指向了dev
 
 - 合并分支
 
-合并某分支到当前分支：git merge <name>
+合并某分支到当前分支：`git merge <name>`
 ```
 git checkout master 
 git merge dev
@@ -114,7 +114,7 @@ git merge dev
 
 ```
 git branch -d dev
-git branch -D <name> //强行删除
+git branch -D `<name>` //强行删除
 
 ```
 

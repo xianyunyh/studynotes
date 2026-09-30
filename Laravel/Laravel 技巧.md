@@ -39,7 +39,9 @@ Eloquent 可以自己把它翻译为 scopePublished 方法。Eloquent 模型中�
 3. Accessors（访问器）
 在很多情况下，你可能需要访问 Eloquent 模型在数据中并不存在，需要经过一定计算的属性，但很抱歉。我们来看一个例子。假设现在有一个 User 表，它包含这样两个字段：forenames和 surname 。如果你想在视图中显示用户全名的话，你不得不这么做：
 
+```blade
 {{ $user->forenames . ' ' . $user->surname }}
+```
 首先，我们的应用中可能有很多地方需要使用这段代码，一遍又一遍的输入显然很不实际。其次，呃，语法非常的丑陋且显得格格不入。下面我们来看看如何通过访问器（又称属性）使其变得更加整洁一些。我们在 User 模型中创建一个新的方法：
 
         class User extends Model
@@ -51,7 +53,9 @@ Eloquent 可以自己把它翻译为 scopePublished 方法。Eloquent 模型中�
         }
 同 Eloquent 识别 scope 一样，任何以 get 和 Attribute 包裹起来的方法都会当做 Eloquent accesor（访问器）。现在我们可以试着执行下面的代码段，它得到的结果和前面是相同的：
 
+```blade
 {{ $user->name }}
+```
 这不仅可以重复使用，而且更容易输入，并且更具有可读性。
 
 4. 动态方法名称

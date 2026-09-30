@@ -3,7 +3,8 @@
 > 模糊匹配路由把某种模式匹配到的所有路由，全都映射到同个组件
 
 
-    <div id="app">
+```html
+<div id="app">
 	<router-link to="/app/aa">aaa</route-link>
 	<router-link to="/app/bb">aaa</route-link>
 	<router-link to="/app/cc">aaa</route-link>	
@@ -29,8 +30,8 @@
 		router
 	})
 	</script>
-	
-	
+```
+
 ## 子路由
 
         /user/foo/profile                     /user/foo/posts
@@ -42,9 +43,10 @@
     | +--------------+ |                  | +-------------+ |
     +------------------+                  +-----------------+
     
-> 实现嵌套路由，需要在父路由中加上router-view 表示子路由渲染的位置。同样地，一个被渲染组件同样可以包含自己的嵌套 `<router-view>`
+> 实现嵌套路由，需要在父路由中加入 `<router-view>`，表示子路由渲染的位置。一个被渲染的组件也可以包含自己的嵌套 `<router-view>`。
     
-        <div id="app">
+```html
+<div id="app">
     	<div id="box">
             <p>
                 <router-link to="/home">home</router-link>
@@ -90,12 +92,12 @@
     	}).$mount('#app')
     	</script>
     </body>
-    
-    
+```
+
 ## 编程路由
     
     
-除了使用 <router-link> 创建 a 标签来定义导航链接，我们还可以借助 router 的实例方法，通过编写代码来实现。
+除了使用 `<router-link>` 创建链接来定义导航，我们还可以借助 router 的实例方法，通过编写代码来实现。
 
 router.push(location)
 

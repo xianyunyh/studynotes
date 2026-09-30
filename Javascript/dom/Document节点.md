@@ -20,7 +20,7 @@ document.documentElement //属性返回当前文档的根节点（root）
 ```
 - **document.body，document.head**
 
-document.head属性返回当前文档的<head>节点，document.body属性返回当前文档的<body>
+document.head 属性返回当前文档的 `<head>` 节点，document.body 属性返回当前文档的 `<body>` 节点。
 
 ```
 document.head === document.querySelector('head') // true
